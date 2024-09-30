@@ -1,0 +1,289 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\DTQuotationGS.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\DTQuotationGS.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\DTQuotationGS.Api.csproj",
+        "projectName": "DTQuotationGS.Api",
+        "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\DTQuotationGS.Api.csproj",
+        "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Business\\DTQuotationGS.Business.csproj": {
+                "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Business\\DTQuotationGS.Business.csproj"
+              },
+              "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj": {
+                "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Business\\DTQuotationGS.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Business\\DTQuotationGS.Business.csproj",
+        "projectName": "DTQuotationGS.Business",
+        "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Business\\DTQuotationGS.Business.csproj",
+        "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj": {
+                "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj"
+              },
+              "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj": {
+                "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj",
+        "projectName": "DTQuotationGS.Entities",
+        "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj",
+        "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj",
+        "projectName": "DTQuotationGS.Repository",
+        "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj",
+        "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj": {
+                "projectPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.67, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
