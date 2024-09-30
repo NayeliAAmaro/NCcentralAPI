@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DTQuotationGS.Api",
+    "\\DTQuotationGS.Api\\Controllers",
+    "\\DTQuotationGS.Business",
+    "\\DTQuotationGS.Repository"
+  ],
+  "SelectedNode": "\\DTQuotationGS.Repository\\CotizacionSFRepository.cs",
+  "PreviewInSolutionExplorer": false
+}

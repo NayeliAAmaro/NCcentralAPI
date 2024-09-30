@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MeyvLNaf9gxRtkRPBp3FR2BjWhY2xRtEiujeXZLsfCA=",
+  "Source": "DTQuotationGS.Api",
+  "BasePath": "_content/DTQuotationGS.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
