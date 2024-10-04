@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A3CED43-000C-45CD-9C79-15B8618F7047}|DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.repository\\cotizacionsfrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A3CED43-000C-45CD-9C79-15B8618F7047}|DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj|solutionrelative:dtquotationgs.repository\\cotizacionsfrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD2D005-3F75-4A14-A538-1F4D021AF5C3}|DTQuotationGS.Business\\DTQuotationGS.Business.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.business\\cotizacionsfbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD2D005-3F75-4A14-A538-1F4D021AF5C3}|DTQuotationGS.Business\\DTQuotationGS.Business.csproj|solutionrelative:dtquotationgs.business\\cotizacionsfbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6F35CF4-982D-4BFC-9DF1-18C93C0B50F7}|DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.entities\\cotizacionsfviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6F35CF4-982D-4BFC-9DF1-18C93C0B50F7}|DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj|solutionrelative:dtquotationgs.entities\\cotizacionsfviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|solutionrelative:dtquotationgs.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.api\\controllers\\cotizacionsfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|solutionrelative:dtquotationgs.api\\controllers\\cotizacionsfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6F35CF4-982D-4BFC-9DF1-18C93C0B50F7}|DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.entities\\cotizacionsfentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6F35CF4-982D-4BFC-9DF1-18C93C0B50F7}|DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj|solutionrelative:dtquotationgs.entities\\cotizacionsfentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|solutionrelative:dtquotationgs.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D6F35CF4-982D-4BFC-9DF1-18C93C0B50F7}|DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.entities\\cotizacionsfviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F35CF4-982D-4BFC-9DF1-18C93C0B50F7}|DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj|solutionrelative:dtquotationgs.entities\\cotizacionsfviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|solutionrelative:dtquotationgs.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8A3CED43-000C-45CD-9C79-15B8618F7047}|DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.repository\\cotizacionsfrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A3CED43-000C-45CD-9C79-15B8618F7047}|DTQuotationGS.Repository\\DTQuotationGS.Repository.csproj|solutionrelative:dtquotationgs.repository\\cotizacionsfrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.api\\controllers\\cotizacionsfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|solutionrelative:dtquotationgs.api\\controllers\\cotizacionsfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{186C43FE-34FF-40CF-8B22-94D84345781D}|DTQuotationGS.Api\\DTQuotationGS.Api.csproj|solutionrelative:dtquotationgs.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F35CF4-982D-4BFC-9DF1-18C93C0B50F7}|DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj|c:\\users\\drago\\onedrive\\desktop\\nccentralapi\\dtquotationgs.entities\\commons\\novacajaconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F35CF4-982D-4BFC-9DF1-18C93C0B50F7}|DTQuotationGS.Entities\\DTQuotationGS.Entities.csproj|solutionrelative:dtquotationgs.entities\\commons\\novacajaconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,105 +33,21 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 274,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 160,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "CotizacionSFController.cs",
               "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\Controllers\\CotizacionSFController.cs",
               "RelativeDocumentMoniker": "DTQuotationGS.Api\\Controllers\\CotizacionSFController.cs",
               "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\Controllers\\CotizacionSFController.cs",
               "RelativeToolTip": "DTQuotationGS.Api\\Controllers\\CotizacionSFController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBIAAABCAAAA",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAUwPIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T21:41:13.208Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CotizacionSFBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Business\\CotizacionSFBusiness.cs",
-              "RelativeDocumentMoniker": "DTQuotationGS.Business\\CotizacionSFBusiness.cs",
-              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Business\\CotizacionSFBusiness.cs",
-              "RelativeToolTip": "DTQuotationGS.Business\\CotizacionSFBusiness.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAcwA8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T21:41:05.398Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CotizacionSFRepository.cs",
-              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\CotizacionSFRepository.cs",
-              "RelativeDocumentMoniker": "DTQuotationGS.Repository\\CotizacionSFRepository.cs",
-              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\CotizacionSFRepository.cs",
-              "RelativeToolTip": "DTQuotationGS.Repository\\CotizacionSFRepository.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAYwCMAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T21:41:00.615Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "DTQuotationGS.Api\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\Properties\\launchSettings.json*",
-              "RelativeToolTip": "DTQuotationGS.Api\\Properties\\launchSettings.json*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-03T19:57:40.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "DTQuotationGS.Api\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\appsettings.Development.json",
-              "RelativeToolTip": "DTQuotationGS.Api\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-03T19:57:37.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CotizacionSFEntity.cs",
-              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\CotizacionSFEntity.cs",
-              "RelativeDocumentMoniker": "DTQuotationGS.Entities\\CotizacionSFEntity.cs",
-              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\CotizacionSFEntity.cs",
-              "RelativeToolTip": "DTQuotationGS.Entities\\CotizacionSFEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T17:04:23.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "DTQuotationGS.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\appsettings.json",
-              "RelativeToolTip": "DTQuotationGS.Api\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-02T23:56:10.831Z",
               "EditorCaption": ""
             },
             {
@@ -150,9 +58,65 @@
               "RelativeDocumentMoniker": "DTQuotationGS.Entities\\CotizacionSFViewModel.cs",
               "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\CotizacionSFViewModel.cs",
               "RelativeToolTip": "DTQuotationGS.Entities\\CotizacionSFViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T23:40:27.91Z",
+              "WhenOpened": "2024-10-04T21:46:54.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CotizacionSFEntity.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\CotizacionSFEntity.cs",
+              "RelativeDocumentMoniker": "DTQuotationGS.Entities\\CotizacionSFEntity.cs",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\CotizacionSFEntity.cs",
+              "RelativeToolTip": "DTQuotationGS.Entities\\CotizacionSFEntity.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA2wAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T21:46:53.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CotizacionSFRepository.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\CotizacionSFRepository.cs",
+              "RelativeDocumentMoniker": "DTQuotationGS.Repository\\CotizacionSFRepository.cs",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Repository\\CotizacionSFRepository.cs",
+              "RelativeToolTip": "DTQuotationGS.Repository\\CotizacionSFRepository.cs",
+              "ViewState": "AQIAAOkAAAAAAAAAAADgv8oAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T21:15:18.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NovaCajaConfig.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\commons\\NovaCajaConfig.cs",
+              "RelativeDocumentMoniker": "DTQuotationGS.Entities\\commons\\NovaCajaConfig.cs",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Entities\\commons\\NovaCajaConfig.cs",
+              "RelativeToolTip": "DTQuotationGS.Entities\\commons\\NovaCajaConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T21:14:18.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\Program.cs",
+              "RelativeDocumentMoniker": "DTQuotationGS.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Desktop\\NCcentralAPI\\DTQuotationGS.Api\\Program.cs",
+              "RelativeToolTip": "DTQuotationGS.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T19:43:47Z",
               "EditorCaption": ""
             }
           ]

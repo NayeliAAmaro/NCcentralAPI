@@ -1,9 +1,19 @@
 
+using DTQuotationGS.Business;
+using DTQuotationGS.Entities.commons;
+using Microsoft.Extensions.Options;
+using System.Configuration;
+using System.Runtime;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//builder.Services.Configure<YourConfigClass>(builder.Configuration.GetSection("ApiSettings"));
+
+NovaCajaConfig novaCajaConfig = builder.Configuration.GetSection("ApiSettings:Apis").Get<NovaCajaConfig>();
 
 builder.Services.AddControllers();
+builder.Services.AddHttpClient();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DTQuotationGS.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd02377ff8d6dcb2aed129ea461dffe5c3f64edb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5be7dbe0f91dfb848499e061c32a6bd53b3921a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DTQuotationGS.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DTQuotationGS.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

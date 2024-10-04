@@ -1,10 +1,14 @@
 ﻿using DTQuotationGS.Entities;
-using HtmlAgilityPack;
+using Newtonsoft.Json;
+using RestSharp;
+using RestSharp.Authenticators;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,57 +19,21 @@ namespace DTQuotationGS.Repository
     public class CotizacionSFRepository
     {
         private readonly string _connectionString;
+        private readonly string _connectionUrls;
+
         public decimal tdc;
 
-        public CotizacionSFRepository(string connectionString)
+        public CotizacionSFRepository(string connectionString, string connectionUrls)
         {
             _connectionString = connectionString;
+            _connectionUrls = connectionUrls;
         }
 
 
 
         public List<CotizacionSFEntity> GetCotizacionSF(int intervaloMinutos)
         {
-            //string url = "<https://www.banxico.org.mx/tipcamb/tipCamMIAction.do>"; // URL del tipo de cambio
-            //string fechaActual = DateTime.Now.ToString("dd/MM/yyyy");
-
-
-            //using (HttpClient client = new HttpClient())
-            //{
-            //    HttpResponseMessage response = client.GetAsync(url).GetAwaiter().GetResult();
-            //    response.EnsureSuccessStatusCode();
-            //    string responseBody = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-
-            //    // Cargar el HTML en HtmlDocument
-            //    var doc = new HtmlDocument();
-            //    doc.LoadHtml(responseBody);
-
-            //    // Ajustar el selector según la fecha actual
-            //    var tipoCambioNode = doc.DocumentNode.SelectSingleNode($"//table//tr[td[contains(text(),'{fechaActual}')]]/td[4]");
-
-            //    if (tipoCambioNode != null)
-            //    {
-            //        string tipoCambio = tipoCambioNode.InnerText.Trim();
-
-            //        // Convertir el tipo de cambio a decimal y formatearlo a cuatro decimales
-            //        if (decimal.TryParse(tipoCambio, out decimal tipoCambioDecimal))
-            //        {
-            //            tdc = tipoCambioDecimal;
-            //            Console.WriteLine("Tipo de cambio para pagos (fecha " + tipoCambioDecimal + "): " + tipoCambioDecimal.ToString("F2")); // Formato a cuatro decimales
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine("No se pudo convertir el tipo de cambio a decimal.");
-            //        }
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("No se pudo encontrar el tipo de cambio para la fecha actual.");
-            //    }
-
-            //}
-
-            var cotizaciones = new List<CotizacionSFEntity>();
+          var cotizaciones = new List<CotizacionSFEntity>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -135,64 +103,143 @@ namespace DTQuotationGS.Repository
             return cotizaciones;
         }
 
-        public List<CotizacionSFViewModel> InsertQuotationSF(List<CotizacionSFViewModel> cotizaciones)
+        //public List<CotizacionSFViewModel> InsertQuotationSF(List<CotizacionSFViewModel> cotizaciones)
+        //{
+
+        //    var insertedCotizaciones = new List<CotizacionSFViewModel>();
+
+        //    using (SqlConnection conn = new SqlConnection(_connectionString))
+        //    {
+        //        conn.Open();
+        //        foreach (var cotizacion in cotizaciones)
+        //        {
+        //            using (SqlCommand cmd = new SqlCommand("[dbo].[STP_InsertQuotation]", conn))
+        //            {
+        //                cmd.CommandType = CommandType.StoredProcedure;
+
+        //                // Parámetros de la cotización
+        //                cmd.Parameters.AddWithValue("@IdQuotation", cotizacion.IdQuotation);
+        //                cmd.Parameters.AddWithValue("@QuoClient", cotizacion.QuoClient);
+        //                cmd.Parameters.AddWithValue("@QuoVendor", cotizacion.QuoVendor);
+        //                cmd.Parameters.AddWithValue("@QuoCreated", cotizacion.QuoCreated);
+        //                cmd.Parameters.AddWithValue("@QuoExpiration", cotizacion.QuoExpiration);
+        //                cmd.Parameters.AddWithValue("@QuoTotal", cotizacion.QuoTotal);
+        //                cmd.Parameters.AddWithValue("@QuoCurrency", cotizacion.QuoCurrency);
+
+        //                SqlParameter idMParam = new SqlParameter("@Id", SqlDbType.Int)
+        //                {
+        //                    Direction = ParameterDirection.Output
+        //                };
+        //                cmd.Parameters.Add(idMParam);
+
+        //                cmd.ExecuteNonQuery(); // Inserta la cotización
+
+        //                int idQuotationGenerated = (int)idMParam.Value;
+
+        //                // Insertar detalles
+        //                foreach (var detalle in cotizacion.Detalles)
+        //                {
+        //                    using (SqlCommand cmdDetalle = new SqlCommand("[dbo].[STP_InsertQuotationDetail]", conn))
+        //                    {
+        //                        cmdDetalle.CommandType = CommandType.StoredProcedure;
+
+        //                        // Parámetros de los detalles de la cotización
+        //                        cmdDetalle.Parameters.AddWithValue("@IdMaster", idQuotationGenerated);
+        //                        cmdDetalle.Parameters.AddWithValue("@Model", detalle.Model);
+        //                        cmdDetalle.Parameters.AddWithValue("@Quantity", detalle.Quantity);
+        //                        cmdDetalle.Parameters.AddWithValue("@UnitPriceIVA", detalle.UnitPriceIVA);
+        //                        cmdDetalle.Parameters.AddWithValue("@Subtotal", detalle.Subtotal);
+
+        //                        cmdDetalle.ExecuteNonQuery(); // Inserta cada detalle
+        //                    }
+        //                }
+        //            }
+
+        //            insertedCotizaciones.Add(cotizacion); // Agregar la cotización insertada a la lista
+        //        }
+        //    }
+
+        //    return insertedCotizaciones;
+        //}
+        //public void InsertQuotationSF(CotizacionSFViewModel cotizaciones, string connectionUrls)
+        //{
+        //    //var ub = cotizaciones.First().Ubicacion;
+
+
+        //    return ExecuteWithRetry(() =>
+        //    {
+
+        //        var request = new RestRequest(_connectionString, Method.Post);
+        //        request.AddHeader("Content-Type", "application/json");
+        //        request.AddParameter("application/json", JsonConvert.SerializeObject(salesOrder), ParameterType.RequestBody);
+
+        //        RestClient client = InitRestClientAuthConfigs(NetsuiteConst.Request.Urls.DTDEV_SALES_ORDER);
+        //        IRestResponse response = client.Execute(request);
+        //        int id = int.Parse(response.Content);
+        //        return id;
+        //    });
+        //}
+
+        public T ExecuteWithRetry<T>(Func<T> action, int maxRetryCount = 3, int secondsRetryInterval = 5)
         {
-            var insertedCotizaciones = new List<CotizacionSFViewModel>();
+            TimeSpan retryInterval = TimeSpan.FromSeconds(secondsRetryInterval);
+            string lastError = "Antes de entrar al ciclo ExecuteWithRetry";
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            for (int retry = 1; retry <= maxRetryCount; retry++)
             {
-                conn.Open();
-                foreach (var cotizacion in cotizaciones)
+                try
                 {
-                    using (SqlCommand cmd = new SqlCommand("[dbo].[STP_InsertQuotation]", conn))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
+                    T result = action.Invoke();
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    lastError = ex.Message;
+                }
 
-                        // Parámetros de la cotización
-                        cmd.Parameters.AddWithValue("@IdQuotation", cotizacion.IdQuotation);
-                        cmd.Parameters.AddWithValue("@QuoClient", cotizacion.QuoClient);
-                        cmd.Parameters.AddWithValue("@QuoVendor", cotizacion.QuoVendor);
-                        cmd.Parameters.AddWithValue("@QuoCreated", cotizacion.QuoCreated);
-                        cmd.Parameters.AddWithValue("@QuoExpiration", cotizacion.QuoExpiration);
-                        cmd.Parameters.AddWithValue("@QuoTotal", cotizacion.QuoTotal);
-                        cmd.Parameters.AddWithValue("@QuoCurrency", cotizacion.QuoCurrency);
-
-                        SqlParameter idMParam = new SqlParameter("@Id", SqlDbType.Int)
-                        {
-                            Direction = ParameterDirection.Output
-                        };
-                        cmd.Parameters.Add(idMParam);
-
-                        cmd.ExecuteNonQuery(); // Inserta la cotización
-
-                        int idQuotationGenerated = (int)idMParam.Value;
-
-                        // Insertar detalles
-                        foreach (var detalle in cotizacion.Detalles)
-                        {
-                            using (SqlCommand cmdDetalle = new SqlCommand("[dbo].[STP_InsertQuotationDetail]", conn))
-                            {
-                                cmdDetalle.CommandType = CommandType.StoredProcedure;
-
-                                // Parámetros de los detalles de la cotización
-                                cmdDetalle.Parameters.AddWithValue("@IdMaster", idQuotationGenerated);
-                                cmdDetalle.Parameters.AddWithValue("@Model", detalle.Model);
-                                cmdDetalle.Parameters.AddWithValue("@Quantity", detalle.Quantity);
-                                cmdDetalle.Parameters.AddWithValue("@UnitPriceIVA", detalle.UnitPriceIVA);
-                                cmdDetalle.Parameters.AddWithValue("@Subtotal", detalle.Subtotal);
-
-                                cmdDetalle.ExecuteNonQuery(); // Inserta cada detalle
-                            }
-                        }
-                    }
-
-                    insertedCotizaciones.Add(cotizacion); // Agregar la cotización insertada a la lista
+                if (retry < maxRetryCount)
+                {
+                    Thread.Sleep(retryInterval);
+                }
+                else
+                {
+                    throw new Exception(lastError);
                 }
             }
-
-            return insertedCotizaciones;
+            throw new Exception(lastError);
         }
 
+        public List<CotizacionSFViewModel> InsertQuotationSF(List<CotizacionSFViewModel> cotizaciones)
+        {
+
+            return ExecuteWithRetry(() =>
+            {
+                // Crear la solicitud
+                var request = new RestRequest(_connectionUrls, Method.Post);
+                request.AddHeader("Content-Type", "application/json");
+                request.AddParameter("application/json", JsonConvert.SerializeObject(cotizaciones), ParameterType.RequestBody);
+
+                // Inicializar el cliente REST
+                RestClient client = new RestClient(_connectionUrls);
+
+                // Ejecutar la solicitud y obtener la respuesta
+                var response = client.Execute<List<CotizacionSFViewModel>>(request);
+
+                // Manejar la respuesta
+                if (response.IsSuccessful)
+                {
+                    // Retornar las cotizaciones si la respuesta es exitosa
+                    return response.Data; // Esto devuelve el tipo que has especificado (List<CotizacionSFViewModel>)
+                }
+                else
+                {
+                    // Manejo de errores
+                    throw new Exception($"Error al insertar cotizaciones: {response.ErrorMessage}");
+                }
+            });
+        }
+
+    
     }
 
 }

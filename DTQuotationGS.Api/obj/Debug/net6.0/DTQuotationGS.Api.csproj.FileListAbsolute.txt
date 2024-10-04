@@ -89,3 +89,7 @@ C:\Users\drago\OneDrive\Desktop\NCcentralAPI\DTQuotationGS.Api\obj\Debug\net6.0\
 C:\Users\drago\OneDrive\Desktop\NCcentralAPI\DTQuotationGS.Api\obj\Debug\net6.0\DTQuotationGS.Api.pdb
 C:\Users\drago\OneDrive\Desktop\NCcentralAPI\DTQuotationGS.Api\obj\Debug\net6.0\DTQuotationGS.Api.genruntimeconfig.cache
 C:\Users\drago\OneDrive\Desktop\NCcentralAPI\DTQuotationGS.Api\obj\Debug\net6.0\ref\DTQuotationGS.Api.dll
+C:\Users\drago\OneDrive\Desktop\NCcentralAPI\DTQuotationGS.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\drago\OneDrive\Desktop\NCcentralAPI\DTQuotationGS.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\drago\OneDrive\Desktop\NCcentralAPI\DTQuotationGS.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\drago\OneDrive\Desktop\NCcentralAPI\DTQuotationGS.Api\bin\Debug\net6.0\RestSharp.dll

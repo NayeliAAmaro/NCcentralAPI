@@ -13,9 +13,11 @@ namespace DTQuotationGS.Business
     {
         private readonly CotizacionSFRepository _repository;
 
-        public CotizacionSFBusiness(string connectionString)
+
+        public CotizacionSFBusiness(string connectionString, string connectionUrls)
         {
-            _repository = new CotizacionSFRepository(connectionString);
+            _repository = new CotizacionSFRepository(connectionString, connectionUrls);
+            //_repositoryUrls = new CotizacionSFRepository(connectionUrls);
         }
 
         public List<CotizacionSFEntity> GetCotizacionSF(int intervaloMinutos)
