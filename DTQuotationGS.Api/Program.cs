@@ -10,9 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Services.Configure<YourConfigClass>(builder.Configuration.GetSection("ApiSettings"));
 
 NovaCajaConfig novaCajaConfig = builder.Configuration.GetSection("ApiSettings:Apis").Get<NovaCajaConfig>();
+builder.Services.AddSingleton(novaCajaConfig);
+
 
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
+builder.Services.AddSingleton(novaCajaConfig);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>

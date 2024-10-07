@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DTQuotationGS.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5be7dbe0f91dfb848499e061c32a6bd53b3921a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d762c4fadbe6044fedf857f4415ff352c41ad7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("DTQuotationGS.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DTQuotationGS.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
